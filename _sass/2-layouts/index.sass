@@ -1,0 +1,220 @@
+//header
+header.header-main
+  position: relative
+  z-index: 1
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  width: 100%
+  height: 500px
+  background:
+    size: cover
+    position: center
+    repeat: no-repeat
+
+  .overlay-light
+    position: absolute
+    z-index: 2
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background: $white
+    opacity: .8
+  //the font properties for the head title ( hassan liaquat Developer etc..)
+  .home-title
+    position: relative
+    z-index: 3
+    text-align: center
+    padding-top: 50px
+    h1
+      font-size: 3.125em
+      font-weight: 450
+      line-height: 1.2em
+      padding: 0 20px 5px 20px
+    h3
+      font-size: 1.25em
+      font-weight: 400
+      line-height: 1.2em
+
+      //properties for the avatar/logo
+
+
+a.home-avatar
+  position: absolute
+  z-index: 3
+  bottom: 0
+  left: 0
+  right: 0
+  margin: auto
+  margin-bottom: -50px
+  height: 100px
+  width: 100px
+  border-radius: 100%
+  box-shadow: 0px 3px 6px 0px rgba(0,0,0,.25)
+  text-align: center
+  background:
+    image: url('../img/hl_logo.png')
+    size: cover
+    position: center center
+    repeat: no-repeat
+  // for iphone and other mobile devices
+  @media screen and(max-width: 355px)
+    height: 75px
+    width: 75px
+    margin-bottom: -43px
+
+  //section for introductions
+.site-intro
+  max-width: 600px
+  margin: 160px auto 100px auto
+  padding: 0 20px
+  text-align: center
+  h2
+    padding-bottom: 17px
+    p
+      a
+        font-weight: 600
+        color: $highlight
+        transition: all 0.15s ease-in-out
+        &:hover
+          color: $secondary
+    //setting for the Project tab.
+    // h2.recent project is the title of recent projects
+h2.recent-projects
+  text-align: center
+  padding-top: 100px
+
+.recent-projects-content-wrapper
+  margin: auto
+  max-width: 800px
+  padding: 60px 20px 0px 20px
+  display: flex
+  flex-direction: column
+  align-items: center
+  .project-wrap
+    width: 100%
+    display: flex
+    justify-content: flex-start
+    .project
+      max-width: 465px
+      min-height: 100px
+      margin: 20px 0px
+      display: flex
+      flex-direction: row
+      justify-content: space-around
+      .project-img
+        background: $primary
+        height: 100px
+        width: 100px
+        flex: 0 0 100px
+        border-radius: 3px
+        cursor: pointer
+        background:
+          size: cover
+          position: center center
+          repeat: no-repeat
+      .project-img-three
+          background:
+            image: url('../img/reddit_pic.jpg')
+      .project-img-four
+          background:
+            image: url('../img/Firefox_pic.jpg')
+      .project-text
+        min-height: 83px
+        height: 100%
+        width: 100%
+        margin-left: 15px
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        padding: 5px 0
+        p
+          line-height: 1.1875em
+  .project-wrap-reverse
+    justify-content: flex-end
+    .project
+      flex-direction: row-reverse
+      .project-text
+        text-align: right
+        margin-right: 15px
+        margin-left: 0
+  @media screen and(max-width: 465px)
+    .project-wrap
+      .Project
+        flex-direction: column
+        min-height: 199px
+        .project-text
+          margin: 6px 0 0 0
+    .project-wrap-reverse
+      .project
+        align-items: flex-end
+        flex-direction: column
+        min-height: 189px
+        .project-text
+          margin: 6px 0 0 0
+
+//for the last 2 lines after skills (ruby ,sass etc..)
+h2.skills
+  text-align: center
+  padding-top: 100px
+
+.skills-text
+  text-align: center
+  padding: 55px 25px
+
+// for the skills section
+.skills-content-wrapper
+  margin: auto
+  max-width: 800px
+  padding: 60px 20px 0px 20px
+  display: flex
+  flex-direction: row
+  align-items: center
+  .skills-wrapper
+    width: 20%
+    display: flex
+    justify-content: flex-start
+    .skill-last
+      max-width: 465px
+      min-height: 120px
+      margin: 20px 0px
+      display: flex
+      flex-direction: row
+      justify-content:  space-between
+      .skills-img
+        height: 100px
+        width: 100px
+        flex: 0 0 100px
+        border-radius: 3px
+        background:
+          size: cover
+          position: center center
+          repeat: no-repeat
+      .skills-img-ruby
+          background:
+            image: url('../img/Logos/Ruby_logo.png')
+      .skills-img-java
+          background:
+            image: url('../img/Logos/java.png')
+      .skills-img-html
+          background:
+            image: url('../img/Logos/html_logo.png')
+      .skills-img-css
+          background:
+            image: url('../img/Logos/css_logo.png')
+      .skills-img-cpp
+          background:
+            image: url('../img/Logos/cpp_logo.png')
+      .skills-img-git
+          background:
+            image: url('../img/Logos/Git_logo.png')
+
+  @media screen and(max-width: 465px)
+    .skills-wrapper
+      .skill-last
+        flex-direction: column
+        justify-content:  space-between
+hr
+  max-width: 600px
