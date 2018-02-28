@@ -1,18 +1,110 @@
 ---
 layout: default
 ---
+<header class="header-main" style="background-image:url('{{ site.baseurl }}/assets/img/background_image.jpg')">
+  <div class="overlay-light"></div>
+  {% include nav.html %}
+  <div class="home-title">
+    <h1>    {{ site.title }} </h1>
+    <h3>Designer/ Developer</h3>
+  </div>
+  <a href="#blrub" class="home-avatar"></a>
+</header>
+<!--about-->
+  <div class="site-intro" id="blurb">
+  <h2>Who is he?</h2>
+  <hr>
+  <p>Hassan is a software developer with a voracious curiosity and a desire to learn everything.Computer Science graduate from Trent University with the goal to produce simple and beautifull projects.
+    Follow my progress by checking out my  <a href="{{ site.baseurl }}projects">projects</a> below.   </p>
+  </div>
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+<!--skills-->
+<h2 class="skills">Skills</h2>
+<hr>
+<div class="skills-content-wrapper">
+  <div class="skills-wrapper">
+    <div class="skill-last">
+      <div class="skills-img skills-img-ruby"></div>
+    </div>
+  </div>
+  <div class="skills-wrapper">
+    <div class="skill-last">
+      <div class="skills-img skills-img-java"></div>
+    </div>
+  </div>
+  <div class="skills-wrapper">
+    <div class="skill-last">
+      <div class="skills-img skills-img-html"></div>
+    </div>
+  </div>
+  <div class="skills-wrapper">
+    <div class="skill-last">
+      <div class="skills-img skills-img-css"></div>
+    </div>
+  </div>
+  <div class="skills-wrapper">
+    <div class="skill-last">
+      <div class="skills-img skills-img-cpp"></div>
+    </div>
+  </div>
+  <div class="skills-wrapper">
+    <div class="skill-last">
+      <div class="skills-img skills-img-git"></div>
+    </div>
+  </div>
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
 </div>
+<a href="" target=""  class="skills-text">
+    <h4>Rails • Unix • Sass • MySQL • HTTP/REST</h4>
+    <h4>Object-oriented programming • Agile software development • Networking </h4>
+</a>
+
+
+<!--skills Ends-->
+<!--projects-->
+<h2 class="recent-projects">Recent Projects</h2>
+<hr>
+<div class="recent-projects-content-wrapper">
+<!--start here if you wish to make it disapear-->
+<div class="project-wrap">
+    <div class="project">
+      <div class="project-img"></div>
+        <a href="" target="_blank"  class="project-text">
+         <h4>Project title </h4>
+          <p> •	A Firefox plugin that aim to make a better way to store and organized your favorite website using JavaScript</p>
+          </a>
+      </div>
+  </div>
+  <div class="project-wrap  project-wrap-reverse">
+    <div class="project">
+      <div class="project-img"></div>
+        <a href="" target="_blank"  class="project-text">
+         <h4>Project title </h4>
+          <p> •	A Firefox plugin that aim to make a better way to store and organized your favorite website using JavaScript </p>
+          </a>
+      </div>
+  </div>
+<!--end here if you wish to make it disapear-->
+  <div class="project-wrap">
+    <div class="project">
+      <div class="project-img   project-img-three"></div>
+        <a href="" target="_blank"  class="project-text">
+         <h4>Firefox Plugin </h4>
+          <p> •	A Firefox plugin that aim to make a better way to store and organized your favorite website using JavaScript</p>
+          </a>
+    </div>
+  </div>
+  <div class="project-wrap  project-wrap-reverse">
+    <div class="project">
+      <div class="project-img project-img-four"></div>
+        <a href="" target="_blank"  class="project-text">
+         <h4>Project title </h4>
+          <p> •	A Firefox plugin that aim to make a better way to store and organized your favorite website using JavaScript </p>
+          </a>
+      </div>
+  </div>
+
+</div>
+
+<!-- project ends-->
