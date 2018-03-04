@@ -200,8 +200,8 @@ h1 {
 
 h2 {
   color: #1C1E24;
-  font-size: 1.875;
-  font-weight: 500;
+  font-size: 1.575em;
+  font-weight: 400;
   line-height: 1.2em;
   opacity: 0.85; }
 
@@ -261,15 +261,15 @@ nav.nav-wrap {
   left: 0;
   right: 0;
   z-index: 900;
-  max-width: 1000px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   margin: auto;
-  padding: 40px; }
+  padding: 40px 240px; }
   @media screen and (max-width: 600px) {
     nav.nav-wrap {
       padding: 35px 20px; } }
@@ -475,7 +475,7 @@ header.header-main {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  height: 500px;
+  height: 450px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
@@ -487,14 +487,14 @@ header.header-main {
     bottom: 0;
     left: 0;
     background: #FFFFFF;
-    opacity: 0.8; }
+    opacity: 0.65; }
   header.header-main .home-title {
     position: relative;
     z-index: 3;
     text-align: center;
     padding-top: 50px; }
     header.header-main .home-title h1 {
-      font-size: 3.125em;
+      font-size: 4.125em;
       font-weight: 450;
       line-height: 1.2em;
       padding: 0 20px 5px 20px; }
@@ -705,7 +705,7 @@ h2.skills {
       .skills-content-wrapper .skills-wrapper .skill-last .skills-img-ruby {
         background-image: url("../img/Logos/Ruby_logo.png"); }
       .skills-content-wrapper .skills-wrapper .skill-last .skills-img-java {
-        background-image: url("../img/Logos/java.png"); }
+        background-image: url("../img/Logos/Java.png"); }
       .skills-content-wrapper .skills-wrapper .skill-last .skills-img-html {
         background-image: url("../img/Logos/html_logo.png"); }
       .skills-content-wrapper .skills-wrapper .skill-last .skills-img-css {
