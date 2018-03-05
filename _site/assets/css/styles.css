@@ -220,7 +220,7 @@ small {
   text-transform: uppercase; }
 
 p {
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-weight: 200; }
 
 h4 {
@@ -527,7 +527,7 @@ a.home-avatar {
       margin-bottom: -43px; } }
 
 .site-intro {
-  max-width: 600px;
+  max-width: 700px;
   margin: 160px auto 100px auto;
   padding: 0 20px;
   text-align: center; }
@@ -547,7 +547,7 @@ h2.recent-projects {
 
 .recent-projects-content-wrapper {
   margin: auto;
-  max-width: 800px;
+  max-width: 700px;
   padding: 60px 20px 0px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -658,7 +658,7 @@ h2.skills {
 
 .skills-content-wrapper {
   margin: auto;
-  max-width: 800px;
+  max-width: 700px;
   padding: 60px 20px 0px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
