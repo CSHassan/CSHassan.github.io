@@ -200,7 +200,7 @@ h1 {
 
 h2 {
   color: #1C1E24;
-  font-size: 1.575em;
+  font-size: 1.875em;
   font-weight: 400;
   line-height: 1.2em;
   opacity: 0.85; }
@@ -220,7 +220,7 @@ small {
   text-transform: uppercase; }
 
 p {
-  font-size: 1.4em;
+  font-size: 1.7em;
   font-weight: 200; }
 
 h4 {
@@ -475,43 +475,36 @@ header.header-main {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  height: 450px;
+  height: 500px;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  /*the font properties for the head title ( hassan liaquat Developer etc..) */ }
   header.header-main .overlay-light {
-    position: static;
+    position: absolute;
     z-index: 2;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     background: #FFFFFF;
-    opacity: 0.75; }
+    opacity: 0.7; }
   header.header-main .home-title {
     position: relative;
     z-index: 3;
     text-align: center;
-    padding-top: 50px; }
+    padding: 50px; }
     header.header-main .home-title h1 {
       font-size: 4.125em;
-      font-weight: 450;
+      font-weight: 400;
       line-height: 1.2em;
       padding: 0 20px 5px 20px; }
     header.header-main .home-title h3 {
-      font-size: 1.25em;
+      font-size: 2.25em;
       font-weight: 400;
       line-height: 1.2em; }
-  header.header-main .home-title-contact-me {
-    max-width: 600px;
-    font-size: 3.125em;
-    font-weight: 100;
-    line-height: 1.2em;
-    padding: 0 25px 5px 20px;
-    color: #000000;
-    margin: 30px 0;
-    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.25); }
 
+/*properties for the avatar/logo */
 a.home-avatar {
   position: absolute;
   z-index: 3;
@@ -528,7 +521,9 @@ a.home-avatar {
   background-image: url("../img/hl_logo.png");
   background-size: cover;
   background-position: center center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  /* for iphone and other mobile devices */
+  /*section for introductions */ }
   @media screen and (max-width: 355px) {
     a.home-avatar {
       height: 75px;
@@ -536,14 +531,16 @@ a.home-avatar {
       margin-bottom: -43px; } }
 
 .site-intro {
-  max-width: 700px;
+  max-width: 900px;
   margin: 160px auto 100px auto;
   padding: 0 20px;
   text-align: center; }
   .site-intro h2 {
-    padding-bottom: 17px; }
+    padding-bottom: 17px;
+    /* setting for the Project tab. */
+    /* h2.recent project is the title of recent projects */ }
     .site-intro h2 p a {
-      font-weight: 600;
+      font-weight: 300;
       color: #517AF4;
       -webkit-transition: all 0.15s ease-in-out;
       transition: all 0.15s ease-in-out; }
@@ -556,7 +553,7 @@ h2.recent-projects {
 
 .recent-projects-content-wrapper {
   margin: auto;
-  max-width: 700px;
+  max-width: 800px;
   padding: 60px 20px 0px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -657,6 +654,7 @@ h2.recent-projects {
       .recent-projects-content-wrapper .project-wrap-reverse .project .project-text {
         margin: 6px 0 0 0; } }
 
+/* for the last 2 lines after skills (ruby ,sass etc..) */
 h2.skills {
   text-align: center;
   padding-top: 100px; }
@@ -665,9 +663,10 @@ h2.skills {
   text-align: center;
   padding: 55px 25px; }
 
+/* for the skills section */
 .skills-content-wrapper {
   margin: auto;
-  max-width: 700px;
+  max-width: 800px;
   padding: 60px 20px 0px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
