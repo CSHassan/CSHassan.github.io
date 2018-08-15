@@ -1,3 +1,13 @@
 <footer class="footer-wrapper">
-<div> </div>
+  <div id ="Newsletter" class = "newsletter-slug">
+    <h2> News Letters</h2>
+    <p>Get updates on my most recent projects/blogs<p>
+  </div>
+  <!-- this is for if I decided to add any thing else in the footer -->
+  {% include newsletter-form.html %}
+  <div class="Footer-Social-Links">
+   <a href="{{ site.Github_path }}" target="blank" class ="social-iconwrap footer-Github-wrapper"></a>
+   <a href="{{ site.Linkedin_path }}"target="blank" class ="social-iconwrap footer-Linkedin-wrapper"></a>
+ </div>
+ <a href="mailto:{{site.email}}"  class= "footer-email">{{site.email}}</a>
 </footer>

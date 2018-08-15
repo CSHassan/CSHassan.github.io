@@ -18,7 +18,8 @@ email: hassan.liaquat1@gmail.com
 description: Hassan Liaquat is Software developer with a voracious curiosity and a desire to learn everything. Computer Science graduate from Trent # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "hassanl.com" # the base hostname & protocol for your site, e.g. http://example.com
-
+Linkedin_path: https://www.linkedin.com/in/hassan-liaquat
+Github_path: https://github.com/CSHassan
 
 # Build settings
 permalink: pretty
