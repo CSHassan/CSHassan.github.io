@@ -577,10 +577,12 @@ footer.footer-wrapper {
       height: 50px;
       width: 50px;
       overflow: hidden;
-      background: #1C1E24;
-        background-size: 90%;
-        background-position: center center;
-        background-repeat: no-repeat; }
+      background-size: 90%;
+      background-position: center center;
+      background-repeat: no-repeat; }
+      footer.footer-wrapper .Footer-Social-Links .social-iconwrap:hover {
+        -webkit-transform: scale(0.95);
+                transform: scale(0.95); }
     footer.footer-wrapper .Footer-Social-Links .footer-Linkedin-wrapper {
       background-image: url("../img/icons/Linkedin.svg"); }
     footer.footer-wrapper .Footer-Social-Links .footer-Github-wrapper {
