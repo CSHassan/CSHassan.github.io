@@ -220,7 +220,7 @@ small {
   text-transform: uppercase; }
 
 p {
-  font-size: 1.7em;
+  font-size: 1.3em;
   font-weight: 200; }
 
 h4 {
@@ -577,10 +577,12 @@ footer.footer-wrapper {
       height: 50px;
       width: 50px;
       overflow: hidden;
-      background: #1C1E24;
-        background-size: 90%;
-        background-position: center center;
-        background-repeat: no-repeat; }
+      background-size: 90%;
+      background-position: center center;
+      background-repeat: no-repeat; }
+      footer.footer-wrapper .Footer-Social-Links .social-iconwrap:hover {
+        -webkit-transform: scale(0.95);
+                transform: scale(0.95); }
     footer.footer-wrapper .Footer-Social-Links .footer-Linkedin-wrapper {
       background-image: url("../img/icons/Linkedin.svg"); }
     footer.footer-wrapper .Footer-Social-Links .footer-Github-wrapper {
@@ -618,8 +620,7 @@ header.header-main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
-  height: 500px;
+  height: calc(100vh);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -632,12 +633,13 @@ header.header-main {
     bottom: 0;
     left: 0;
     background: #FFFFFF;
-    opacity: 0.7; }
+    opacity: 0.65; }
   header.header-main .home-title {
     position: relative;
     z-index: 3;
     text-align: center;
-    padding: 50px; }
+    padding: 50px;
+    margin: 10px 0; }
     header.header-main .home-title h1 {
       font-size: 4.125em;
       font-weight: 400;
@@ -649,30 +651,45 @@ header.header-main {
       line-height: 1.2em; }
 
 /*properties for the avatar/logo */
+a.view-profile-button {
+  z-index: 2;
+  color: #1C1E24;
+  font-size: 1.1em;
+  font-weight: 500;
+  padding: 0.5em 2em;
+  border: 2px solid #1C1E24;
+  border-radius: 4px;
+  text-transform: uppercase; }
+
 a.home-avatar {
-  position: absolute;
   z-index: 3;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  margin-bottom: -50px;
-  height: 100px;
-  width: 100px;
-  border-radius: 100%;
-  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.25);
-  text-align: center;
-  background-image: url("../img/hl_logo.png");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  /* for iphone and other mobile devices */
+  box-sizing: border-box;
+  height: 2.5vw;
+  width: 2.5vw;
+  border-style: solid;
+  border-color: #1C1E24;
+  border-width: 0px 1px 1px 0px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: border-width 150ms ease-in-out;
+  transition: border-width 150ms ease-in-out; }
+
+.home-avatar:hover {
+  border-bottom-width: 4px;
+  border-right-width: 4px; }
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 10vh;
   /*section for introductions */ }
-  @media screen and (max-width: 355px) {
-    a.home-avatar {
-      height: 75px;
-      width: 75px;
-      margin-bottom: -43px; } }
 
 .site-intro {
   max-width: 900px;
@@ -743,7 +760,7 @@ h2.recent-projects {
         background-position: center center;
         background-repeat: no-repeat; }
       .recent-projects-content-wrapper .project-wrap .project .project-img-three {
-        background-image: url("../img/reddit_pic.jpg"); }
+        background-image: url("../img/Reddit_pic.jpg"); }
       .recent-projects-content-wrapper .project-wrap .project .project-img-four {
         background-image: url("../img/Firefox_pic.jpg"); }
       .recent-projects-content-wrapper .project-wrap .project .project-text {
@@ -762,7 +779,7 @@ h2.recent-projects {
             justify-content: space-around;
         padding: 5px 0; }
         .recent-projects-content-wrapper .project-wrap .project .project-text p {
-          line-height: 1.1875em; }
+          line-height: 1em; }
   .recent-projects-content-wrapper .project-wrap-reverse {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
@@ -878,3 +895,69 @@ h2.skills {
 
 hr {
   max-width: 600px; }
+
+header.blog-index-header-main {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 450px;
+  width: 100%;
+  background-size: cover;
+  background-position: relative;
+  background-repeat: no-repeat;
+  background-opacity: 0.1; }
+  header.blog-index-header-main .overlay-dark {
+    background: #1C1E24;
+    opacity: 0.9;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+  header.blog-index-header-main .blog-index-title {
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    padding: 50x; }
+
+h1.recent-blog-post {
+  max-width: 600px;
+  font-size: 3.125em;
+  font-weight: 500;
+  line-height: 1.2em;
+  padding: 0 20px 5px 20px;
+  color: #FFFFFF;
+  margin: 30px 0; }
+
+.recent-blog {
+  color: #FFFFFF;
+  margin: 30px 0; }
+@mediascreen and (max-width:  500px) {
+  .recent-blog {
+    font-size: 2.5em; } }
+@mediascreen and(max-width: 400px) {
+  .recent-blog {
+    font-size: 2.1875em; } }
+@mediascreen and(max-width: 360px) {
+  .recent-blog {
+    font-size: 1.1875em; } }
+a.read-recent-blog-post {
+  color: #FFFFFF;
+  font-size: 0.75em;
+  font-weight: 500;
+  padding: 0.5em 2em;
+  border: 2px solid #FFFFFF;
+  border-radius: 4px;
+  text-transform: uppercase; }

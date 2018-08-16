@@ -8,7 +8,20 @@ layout: default
     <h1>  {{ site.title }} </h1>
     <h3>Designer/ Developer</h3>
   </div>
-  <a href="#blrub" class="home-avatar"></a>
+    <a href="" class ="view-profile-button">View Profile</a>
+  <div class="container">
+
+  <script>
+  function scrollWin() {
+    var element = document.getElementById("blurb");
+    element.scrollIntoView({behavior: "smooth"});
+
+  }
+  </script>
+    <a datascroll href="#blrub" class="home-avatar" onclick="scrollWin()"></a>
+
+  </div>
+
 </header>
 <!--about-->
   <div class="site-intro" id="blurb">
@@ -98,6 +111,6 @@ layout: default
 </div>
 </div>
 </div>
-<hr />
-{% include footer.html %}
+
+
 <!-- project ends-->

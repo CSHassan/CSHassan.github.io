@@ -6,8 +6,7 @@ header.header-main
   flex-direction: column
   align-items: center
   justify-content: center
-  width: 100%
-  height: 500px
+  height: calc(100vh)
 
   background:
     size: cover
@@ -22,13 +21,14 @@ header.header-main
     bottom: 0
     left: 0
     background: $white
-    opacity: .70
+    opacity: .65
   /*the font properties for the head title ( hassan liaquat Developer etc..)
   .home-title
     position: relative
     z-index: 3
     text-align: center
     padding: 50px
+    margin: 10px 0
 
     h1
       font-size: 4.125em
@@ -41,29 +41,38 @@ header.header-main
       line-height: 1.2em
 
 /*properties for the avatar/logo
+a.view-profile-button
+  z-index: 2
+  color: $primary
+  font-size: 1.1em
+  font-weight: 500
+  padding: .5em 2em
+  border: 2px solid $primary
+  border-radius: 4px
+  text-transform: uppercase
+
 a.home-avatar
-  position: absolute
+
   z-index: 3
-  bottom: 0
-  left: 0
-  right: 0
-  margin: auto
-  margin-bottom: -50px
-  height: 100px
-  width: 100px
-  border-radius: 100%
-  box-shadow: 0px 3px 6px 0px rgba(0,0,0,.25)
-  text-align: center
-  background:
-    image: url('../img/hl_logo.png')
-    size: cover
-    position: center center
-    repeat: no-repeat
-  /* for iphone and other mobile devices
-  @media screen and(max-width: 355px)
-    height: 75px
-    width: 75px
-    margin-bottom: -43px
+  box-sizing: border-box
+  height: 2.5vw
+  width: 2.5vw
+  border-style: solid
+  border-color: $primary
+  border-width: 0px 1px 1px 0px
+  transform: rotate(45deg)
+  transition: border-width 150ms ease-in-out
+
+.home-avatar:hover
+  border-bottom-width: 4px
+  border-right-width: 4px
+
+
+.container
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 10vh
 
   /*section for introductions
 .site-intro
@@ -117,7 +126,7 @@ h2.recent-projects
           repeat: no-repeat
       .project-img-three
           background:
-            image: url('../img/reddit_pic.jpg')
+            image: url('../img/Reddit_pic.jpg')
       .project-img-four
           background:
             image: url('../img/Firefox_pic.jpg')
@@ -131,7 +140,7 @@ h2.recent-projects
         justify-content: space-around
         padding: 5px 0
         p
-          line-height: 1.1875em
+          line-height: 1em
   .project-wrap-reverse
     justify-content: flex-end
     .project
