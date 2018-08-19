@@ -421,6 +421,8 @@ nav.nav-wrap {
     background-image: url("../img/icons/icons_projects.svg"); }
   nav.nav-wrap .inter-link-icon-Contact {
     background-image: url("../img/icons/icons_contact.svg"); }
+  nav.nav-wrap .inter-link-icon-Blog {
+    background-image: url("../img/icons/icons_contact.png"); }
   nav.nav-wrap .nav-toggle-side-overlay {
     display: block;
     position: fixed;
@@ -687,8 +689,8 @@ header.header-main {
   display: inline-block;
   margin-left: 15px;
   box-sizing: border-box;
-  height: 0.75vw;
-  width: 0.75vw;
+  height: 1vw;
+  width: 1vw;
   border-style: solid;
   border-color: #1C1E24;
   border-width: 0px 1px 1px 0px;
