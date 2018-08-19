@@ -21,6 +21,9 @@ url: "hassanl.com" # the base hostname & protocol for your site, e.g. http://exa
 Linkedin_path: https://www.linkedin.com/in/hassan-liaquat
 Github_path: https://github.com/CSHassan
 
+
+pathToBlogImg: /assests/imgs/Blog/
+
 # Build settings
 permalink: pretty
 markdown: kramdown

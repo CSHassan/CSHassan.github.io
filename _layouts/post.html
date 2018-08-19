@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<header class="blog-index-header-main"   style="background-mage:url('{{ site.url }}{{ site.pathToBlogImg }}{{ page.featImg }}');">
+<div class="overlay-dark"</div>
+  {% include nav.html %}
+<div class="blog-title">
+  <h1 class="recent-blog-post-title">{{ page.title }}</h1>
+</div>
+
+<div class="authorCard">
+  <img src="{{ site.url }}{{ site.data.authors[page.author].avatar }}" alt="{{ site.data.authors[page.author].name }} Avatar" />
+  <small> <em> by <a href="">{{ site.data.authors[page.author].name }}</a><br>on {{ page.date | date: "%B %e, %Y"}}</em></small>
+ </div>
+</header>
+<div class="blogPostContent">
+  {{ content }}
+</div>
+<hr>
+<h5 class="readmoreCTA"> You Might Want to Read...</h5>
+<div class="blogReadMore">
+
+</div>
