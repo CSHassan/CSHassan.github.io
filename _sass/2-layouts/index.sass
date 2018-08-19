@@ -40,9 +40,18 @@ header.header-main
       font-weight: 400
       line-height: 1.2em
 
-/*properties for the the button
-a.view-profile-button
+//container for view profile button
+.container
+  display: flex
+  justify-content: center
+  align-items: center
+  justify-content: center
+  height: 8vh
+
+/*properties for the view profile button and arrow
+.view-profile-button
   z-index: 2
+  display: inline-block
   color: $primary
   font-size: 1.1em
   font-weight: 500
@@ -53,29 +62,25 @@ a.view-profile-button
   &:hover
     background: $black
     color: $white
-// home avatar contain the arrow key that points to who am i section
-a.home-avatar
+    .home-avatar
+      border-color: $white
+      border-bottom-width: 4px
+      border-right-width: 4px
 
+//properties for the arrow in the view profile button
+.home-avatar
   z-index: 3
+  display: inline-block
+  margin-left: 15px
   box-sizing: border-box
-  height: 2.5vw
-  width: 2.5vw
+  height: .75vw
+  width: .75vw
   border-style: solid
   border-color: $primary
   border-width: 0px 1px 1px 0px
   transform: rotate(45deg)
   transition: border-width 150ms ease-in-out
 
-.home-avatar:hover
-  border-bottom-width: 4px
-  border-right-width: 4px
-
-
-.container
-  display: flex
-  align-items: center
-  justify-content: center
-  height: 10vh
 
   /*section for introductions
 .site-intro

@@ -8,17 +8,16 @@ layout: default
     <h1>  {{ site.title }} </h1>
     <h3>Designer/ Developer</h3>
   </div>
-    <a href="" class ="view-profile-button">View Profile</a>
+
   <div class="container">
 
   <script>
   function scrollWin() {
     var element = document.getElementById("blurb");
     element.scrollIntoView({behavior: "smooth"});
-
   }
   </script>
-    <a datascroll href="#blrub" class="home-avatar" onclick="scrollWin()"></a>
+    <div class ="view-profile-button" onclick="scrollWin()">View Profile<div class="home-avatar"></div></div>
 
   </div>
 
