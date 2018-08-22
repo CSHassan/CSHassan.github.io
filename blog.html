@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+
+{% for post in site.posts offset: 0 limit: 1 %}
 <header class="blog-index-header-main" style="background-image:url('{{ site.baseurl }}/assets/img/Blog_Background.jpg')">
   <div class="overlay-dark"></div>
   {% include nav.html %}
@@ -10,3 +12,5 @@ layout: default
   </div>
 
 </header>
+
+{% endfor %}
