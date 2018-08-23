@@ -878,11 +878,7 @@ h2.skills {
           -ms-flex-pack: justify;
               justify-content: space-between; }
       .skills-content-wrapper .skills-wrapper .skill-last .skills-img {
-<<<<<<< HEAD
         height: auto;
-=======
-        height: 100%;
->>>>>>> f0226522481dccbf424e0b03ecc1bb786830f546
         width: 100%;
         -webkit-box-flex: 0;
             -ms-flex: 0 0 100px;
