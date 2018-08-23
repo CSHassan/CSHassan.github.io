@@ -1,14 +1,14 @@
 ---
 layout: default
 ---
-
-
-<header class="blog-index-header-main" style="background-image:url('{{ site.baseurl }}{{ site.pathToBlogImg }}{{ post.featImg }}')">
+{% for post in site.posts offset: 0 limit: 1 %}
+<header class="blog-index-header-main" style="background-image:url('{{ site.url }}{{ site.pathToBlogImg }}{{ post.featImg }}');">
   <div class="overlay-dark"></div>
   {% include nav.html %}
   <div class="blog-index-title">
-    <h1 class= "recent-blog">  Recent Blog post </h1>
-    <a href="" class ="read-recent-blog-post">Read</a>
+    <h1 class= "recent-blog"> {{ post.title }} </h1>
+    <a href="{{ post.url }}" class ="read-recent-blog-post">Read</a>
   </div>
 
 </header>
+{% endfor %}

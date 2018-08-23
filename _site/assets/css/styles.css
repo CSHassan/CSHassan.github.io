@@ -923,10 +923,11 @@ header.blog-index-header-main {
           justify-content: center;
   height: 450px;
   width: 100%;
-  background-size: cover;
-  background-position: relative;
-  background-repeat: no-repeat;
-  background-opacity: 0.1; }
+  background: #1C1E24;
+    background-size: cover;
+    background-position: relative;
+    background-repeat: no-repeat;
+    background-opacity: 0.9; }
   header.blog-index-header-main .overlay-dark {
     background: #1C1E24;
     opacity: 0.9;
@@ -951,7 +952,7 @@ h1.recent-blog-post {
   margin: 30px 0; }
 
 .recent-blog {
-  color: #1C1E24;
+  color: #FFFFFF;
   margin: 30px 0; }
 @mediascreen and (max-width:  500px) {
   .recent-blog {
