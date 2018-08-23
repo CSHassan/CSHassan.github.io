@@ -22,7 +22,7 @@ Linkedin_path: https://www.linkedin.com/in/hassan-liaquat
 Github_path: https://github.com/CSHassan
 
 
-pathToBlogImg: /assests/imgs/Blog/
+pathToBlogImg: /assets/img/Blog/
 
 # Build settings
 permalink: pretty
