@@ -325,7 +325,8 @@ nav.nav-wrap {
       nav.nav-wrap ul.navigation.nav-dark li a {
         color: #1C1E24;
         -webkit-transition: all 0.15s ease-in;
-        transition: all 0.15s ease-in; }
+        transition: all 0.15s ease-in;
+        font-size: 1em; }
       nav.nav-wrap ul.navigation.nav-dark li a:hover {
         color: #bfbfbf; }
     nav.nav-wrap ul.navigation.nav-dark li:last-of-type {
@@ -374,7 +375,7 @@ nav.nav-wrap {
     right: 0;
     bottom: 0;
     z-index: 1002;
-    width: 300px;
+    width: 250px;
     height: 100%;
     padding: 35px 20px 35px 0;
     background: #FFFFFF;
@@ -841,7 +842,8 @@ h2.skills {
 /* for the skills section */
 .skills-content-wrapper {
   margin: auto;
-  max-width: 800px;
+  max-width: 600px;
+  min-width: 300px;
   padding: 60px 20px 0px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -876,8 +878,8 @@ h2.skills {
           -ms-flex-pack: justify;
               justify-content: space-between; }
       .skills-content-wrapper .skills-wrapper .skill-last .skills-img {
-        height: 100px;
-        width: 100px;
+        height: auto;
+        width: 100%;
         -webkit-box-flex: 0;
             -ms-flex: 0 0 100px;
                 flex: 0 0 100px;
