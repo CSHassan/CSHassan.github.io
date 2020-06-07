@@ -872,12 +872,12 @@ h2.skills {
           -ms-flex-pack: justify;
               justify-content: space-between; }
       .skills-content-wrapper .skills-wrapper .skill-last .skills-img {
-        height: auto;
-        width: 100%;
+        height: 125px;
+        width: 105%;
         -webkit-box-flex: 0;
-            -ms-flex: 0 0 100px;
-                flex: 0 0 100px;
-        border-radius: 2px;
+            -ms-flex: 0 0 125px;
+                flex: 0 0 125px;
+        border-radius: 0px;
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat; }
@@ -886,7 +886,7 @@ h2.skills {
       .skills-content-wrapper .skills-wrapper .skill-last .skills-img-java {
         background-image: url("../img/Logos/Java.png"); }
       .skills-content-wrapper .skills-wrapper .skill-last .skills-img-csharp {
-        background-image: url("../img/Logos/C#_logo.png"); }
+        background-image: url("../img/Logos/CSharp_logo.png"); }
       .skills-content-wrapper .skills-wrapper .skill-last .skills-img-css {
         background-image: url("../img/Logos/css_logo.png"); }
       .skills-content-wrapper .skills-wrapper .skill-last .skills-img-git {
